@@ -1,5 +1,5 @@
 :root{
-    --color-primary: #2980b9; 
+    --color-primary: #047bca; 
 }
 
 *{
@@ -288,4 +288,101 @@ img{
 .social{
     display: flex;
     gap: 20px;
+}
+
+
+/*--------------Feature page--------------*/
+
+.feature{
+    background-color: var(--color-primary);
+    color: white;
+    padding: 40px 0;
+}
+.featureInfo h1{
+    font-size: 60px;
+
+}
+
+.featureInfo p{
+    font-size: 1.5rem;
+}
+
+.featureImage{
+    width: 200px;
+}
+
+
+.platform{
+    padding: 50px 0;
+}
+
+.platformInfo h3{
+    font-size: 35px;
+
+}
+
+.platformInfo p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
+.featureGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    /* text-align: center; */
+    margin-bottom: 40px;
+
+}
+
+[class^='item']{
+    /* border: 1px solid black; */
+    box-shadow: 0 0 5px 2px #013b61;
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+.item1{
+    grid-column: 1 / span 3;
+}
+
+.item2{
+    grid-column: 1 / span 2;
+}
+
+[class^='item'] img {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    align-items: center;
+
+}
+
+[class^='item'] p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/*---------------responsive---------------*/
+
+@media (max-width: 500px){
+    .navbar{
+        height: 120px;
+
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+    .menuList{
+        background-color: #056fb5;
+        padding: 15px;
+    }
+
 }
