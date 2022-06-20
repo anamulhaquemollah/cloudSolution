@@ -341,7 +341,7 @@ img{
 
 [class^='item']{
     /* border: 1px solid black; */
-    box-shadow: 0 0 5px 0px #013050;
+    box-shadow: 1px 1px 3px 0px #013050;
     background-color: var(--color-primary);
     color: white;
     text-align: center;
@@ -385,7 +385,7 @@ img{
     padding:  35px;
     height: fit-content;
     border-radius: 10px;
-    box-shadow: 0 0 4px 2px #2980b9;
+    box-shadow: 0 0 4px 1px #2980b9;
 }
 
 .docMenuTopic{
